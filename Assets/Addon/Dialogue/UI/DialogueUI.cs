@@ -28,7 +28,8 @@ namespace RPG.UI
         GameObject chatLogPrefab;
         [SerializeField]
         GameObject logPage;
-
+        [SerializeField] 
+        CoreBoolean core;
 
         void Start()
         {
@@ -44,6 +45,7 @@ namespace RPG.UI
         {
             if(enabledBool == DialogueHolder.GetBoolName())
             {
+                core.IncreaseScore(10);
                 if (other.Cr())
                 {
                     other.RevealAll();
@@ -56,7 +58,7 @@ namespace RPG.UI
             }
             else
             {
-                Debug.Log("not my bool");
+               // Debug.Log("not my bool");
             }
         }
 

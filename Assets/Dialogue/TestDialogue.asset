@@ -15,7 +15,7 @@ MonoBehaviour:
   isPlayerSpeaking: 0
   isRootNode: 1
   parentID: 
-  taskName: "\u043A\u0432\u0435\u0441\u0442"
+  taskName: "\u043A\u0432\u0435\u0441\u0442 1"
   text: "\u2022\u043E\u0441\u043C\u043E\u0442\u0440\u0435\u0442\u044C\u0441\u044F"
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
@@ -97,15 +97,15 @@ MonoBehaviour:
   isRootNode: 0
   parentID: 3e2fe5c1-0990-4044-b416-19aa14e77569
   taskName: "\u043A\u0432\u0435\u0441\u0442 2"
-  text: "\u2022\u043D\u0430\u0434\u0435\u0442\u044C \u043F\u0435\u0440\u0447\u0430\u0442\u043A\u0438"
+  text: "\u2022\u041D\u0430\u0434\u0435\u043D\u044C\u0442\u0435 \u043F\u0435\u0440\u0447\u0430\u0442\u043A\u0438 "
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
   children:
   - 653c9c58-c94f-4bc7-86c5-39bdb2d631c2
   pos:
     serializedVersion: 2
-    x: 373
-    y: 138
+    x: 383
+    y: 142
     width: 200
     height: 200
   nodeNumber: 1

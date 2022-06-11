@@ -18,6 +18,8 @@ public class PlayerCamera : MonoBehaviour
     [SerializeField]
     float rotationSpeed = 0.8f;
 
+    int lookScore = 10;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,14 +37,20 @@ public class PlayerCamera : MonoBehaviour
             if(distance_rotated>180)
             {
                core.EnableThisBool("lookedAround","");
+               if(lookScore > 0)
+               {
+                    core.IncreaseScore(lookScore);
+                    lookScore=0;
+               }
+              
             }
         
            
             transform.rotation = Quaternion.Lerp(transform.rotation,targetRotation, rotationSpeed * Time.deltaTime);
-             Debug.Log("rotate"+transform.rotation.y);
+             /* Debug.Log("rotate"+transform.rotation.y);
             Debug.Log("distance_rotated"+targetRotation.y);
             Debug.Log(Mathf.Abs(transform.rotation.y - targetRotation.y));
-            Debug.Log(distance_rotated);
+            Debug.Log(distance_rotated); */
         }
    }
 }

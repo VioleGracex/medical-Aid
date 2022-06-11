@@ -39,7 +39,7 @@ public class Drag : MonoBehaviour
             Debug.Log(distance);
              if(distance<=0.006f && slots_handler.slotsTaken[counter] !=true )
              {
-                   Debug.Log("jajajajjaja");
+                   //Debug.Log("jajajajjaja");
                 this.transform.position = new Vector3(s.transform.position.x, s.transform.position.y, s.transform.position.z);
                // slots_handler.slotsTaken[counter] = true;
                 placed = true;

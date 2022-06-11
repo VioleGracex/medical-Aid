@@ -5,6 +5,7 @@ using TMPro;
 
 public class SlotTracker : MonoBehaviour
 {
+    public CoreBoolean core;
     public List<bool> slotsTaken = new List<bool> (6);
     
     public List<GameObject> elipses;
@@ -16,6 +17,8 @@ public class SlotTracker : MonoBehaviour
 
     [SerializeField]
     TextMeshProUGUI  result_list;
+    [SerializeField]
+    string  result;
 
     public void ResetElipses()
     {
@@ -81,10 +84,10 @@ public class SlotTracker : MonoBehaviour
         }
       }
 
-    Debug.Log("LISTSTSTSATAS");
+    //Debug.Log("LISTSTSTSATAS");
       foreach (var item in match_elipses)
       {
-          Debug.Log("REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE");
+          //Debug.Log("REEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE");
         
         result_list.text += item.ToString()+ "\n";
       }
@@ -100,5 +103,23 @@ public class SlotTracker : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void CheckECGResult()
+    {
+      string temp =  @"Result[red, slot 1]
+[green, slot 2]
+[black, slot 3]
+[grinch, slot 4]
+[blue, slot 5]
+[purple, slot 6]
+";
+      result= result_list.text;
+      if(result_list.text == temp)
+      {
+        core.IncreaseScore(10);
+        
+      }
+
     }
 }
