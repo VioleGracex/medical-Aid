@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8307646214249333478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: a541ea46-ac4a-4804-b000-764eaf84e42b
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isRootNode: 0
+  parentID: 9d0a18dc-19d7-41a8-8ea9-84591fb80aa6
+  taskName: 
+  text: 
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children: []
+  pos:
+    serializedVersion: 2
+    x: 1258
+    y: 156
+    width: 200
+    height: 200
+  nodeNumber: 4
+  dependantBool: None
+  nodeIndexPosition: 0
+  taskCheck: 0
 --- !u!114 &-3846380971509968573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23,8 +53,8 @@ MonoBehaviour:
   - bfa27382-9e30-4805-a393-8c60f30aa616
   pos:
     serializedVersion: 2
-    x: 75
-    y: 138
+    x: 117
+    y: 88
     width: 200
     height: 200
   nodeNumber: 0
@@ -51,11 +81,12 @@ MonoBehaviour:
     \u041F\u043E\u0434\u043E\u0448\u0435\u043B \u043A \u043F\u0430\u0446\u0438\u0435\u043D\u0442\u0443"
   voiceLine: {fileID: 0}
   musicAudio: {fileID: 0}
-  children: []
+  children:
+  - 9d0a18dc-19d7-41a8-8ea9-84591fb80aa6
   pos:
     serializedVersion: 2
-    x: 645
-    y: 141
+    x: 640
+    y: 86
     width: 200
     height: 200
   nodeNumber: 2
@@ -78,6 +109,8 @@ MonoBehaviour:
   - {fileID: -3846380971509968573}
   - {fileID: 2762003949793233826}
   - {fileID: -330389135244496594}
+  - {fileID: 4378117591188132743}
+  - {fileID: -8307646214249333478}
   canvasHeight: 4000
   canvasWidth: 4000
   newNodeOffset: {x: 250, y: 0}
@@ -104,11 +137,42 @@ MonoBehaviour:
   - 653c9c58-c94f-4bc7-86c5-39bdb2d631c2
   pos:
     serializedVersion: 2
-    x: 383
-    y: 142
+    x: 380
+    y: 88
     width: 200
     height: 200
   nodeNumber: 1
   dependantBool: glovesOn
   nodeIndexPosition: 3
+  taskCheck: 0
+--- !u!114 &4378117591188132743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a2e4a914e726d4f83b67840c01f38a, type: 3}
+  m_Name: 9d0a18dc-19d7-41a8-8ea9-84591fb80aa6
+  m_EditorClassIdentifier: 
+  isPlayerSpeaking: 0
+  isRootNode: 0
+  parentID: 653c9c58-c94f-4bc7-86c5-39bdb2d631c2
+  taskName: 
+  text: 
+  voiceLine: {fileID: 0}
+  musicAudio: {fileID: 0}
+  children:
+  - a541ea46-ac4a-4804-b000-764eaf84e42b
+  pos:
+    serializedVersion: 2
+    x: 967
+    y: 111
+    width: 200
+    height: 200
+  nodeNumber: 3
+  dependantBool: None
+  nodeIndexPosition: 0
   taskCheck: 0

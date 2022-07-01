@@ -90,6 +90,12 @@ public class CoreBoolean : MonoBehaviour
         }
 
     }
+    public void EnableThisBoolonly(string enabledBool)
+    {
+        dependantBools[enabledBool] = true;
+        uiHandler.Next(enabledBool);
+
+    }
     public void DisableThisBool(string disabledBool)
     {
         dependantBools[disabledBool]=false;
